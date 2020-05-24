@@ -3,7 +3,7 @@
 // Just copy a variable from src/sass/bootstrap4/_variables.scss, paste it here and edit the value.
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500&display=swap');
 //Colors
 $primary: #5533ff; // Thats a sample how you could change a BootStrap variable.
 $black-russian: #070D26;
@@ -13,3 +13,4 @@ $shamrock: #46F79E;
 
 //Fonts
 $roboto: 'Roboto', sans-serif;
+$workSans: 'Work Sans', sans-serif;
