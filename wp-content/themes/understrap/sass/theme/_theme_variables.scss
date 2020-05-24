@@ -1,0 +1,15 @@
+// Use this file to overwrite the basic Bootstrap variables and add your own variables
+// To overwrite a Bootstrap variable you don´t have to touch the Bootstrap folder.
+// Just copy a variable from src/sass/bootstrap4/_variables.scss, paste it here and edit the value.
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+//Colors
+$primary: #5533ff; // Thats a sample how you could change a BootStrap variable.
+$black-russian: #070D26;
+$white: #FFFFFF;
+$aqua: #00E1FF;
+$shamrock: #46F79E;
+
+//Fonts
+$roboto: 'Roboto', sans-serif;

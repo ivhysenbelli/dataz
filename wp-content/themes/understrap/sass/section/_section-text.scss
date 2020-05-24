@@ -1,0 +1,17 @@
+.section-text {
+	.data {
+		max-width: 800px;
+		padding: 3em 1em;
+		margin: 0 auto;
+		text-align: center;
+
+		h2 {
+			margin-bottom: .5em;
+			font-size: 4rem;
+			font-weight: 700;
+			background: linear-gradient(to right ,rgba($shamrock, 1), rgba($aqua, 1));
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+		}
+	}
+}
