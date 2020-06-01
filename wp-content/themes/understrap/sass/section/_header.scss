@@ -65,7 +65,7 @@
 			}
 		}
 
-		@include media-breakpoint-down (md) {
+		@include media-breakpoint-down (sm) {
 			height: 85vh;
 			display: flex;
 			align-items: center;
@@ -104,7 +104,7 @@
 				}
 
 				&:nth-child(2) {
-					opacity: 0;
+					width: 0;
 				}
 
 				&:nth-child(3) {

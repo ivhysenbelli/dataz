@@ -10,16 +10,30 @@
 			-webkit-text-fill-color: transparent;
 		}
 	}
-	.clients{
+
+	.clients {
 		display: flex;
 		flex-wrap: wrap;
-		.single-client{
+
+		.single-client {
 			flex: 1 0 25%;
 			max-width: 277px;
 			display: flex;
 			align-items: center;
-			img{
+
+			img {
 				max-width: 150px;
+
+				@include media-breakpoint-down(md) {
+					max-width: 100px;
+				}
+			}
+
+			@include media-breakpoint-down(md) {
+				margin-bottom: 1em;
+			}
+			@include media-breakpoint-down(sm) {
+				margin-bottom: 2em;
 			}
 		}
 	}
