@@ -1,11 +1,18 @@
 // This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
 
-body{
+html {
+	overflow-x: hidden;
+}
+
+body {
 	background-color: $black-russian;
 	color: $white;
 	font-family: $roboto;
 }
 
-.section{
+.section {
 	margin: 0 -15px 80px;
+	@include media-breakpoint-down(md){
+		margin: 0 0 80px;
+	}
 }

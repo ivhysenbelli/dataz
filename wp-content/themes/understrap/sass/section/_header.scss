@@ -1,0 +1,117 @@
+#wrapper-navbar {
+	background: $black-russian !important;
+
+	.navbar-brand {
+		img {
+			max-width: 150px;
+			width: 100%;
+		}
+	}
+
+	.navbar-nav {
+		li {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			transition: all .35s ease;
+
+			a {
+				letter-spacing: 1.5px;
+				font-size: 14px;
+				padding: 0 2em;
+				font-weight: 300;
+				color: $white;
+				transition: all .35s ease;
+				display: flex;
+				align-items: center;
+
+				&:before {
+					content: '';
+					display: block;
+					width: 5px;
+					height: 5px;
+					border-radius: 50%;
+					margin-right: 10px;
+					background-image: transparent;
+				}
+			}
+
+
+			&.current-menu-item {
+				background-image: linear-gradient(to right, rgba($shamrock, 1), rgba($aqua, 1));
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+
+				a {
+
+					&:before {
+						background-image: linear-gradient(to right, rgba($shamrock, 1), rgba($aqua, 1));
+					}
+				}
+			}
+
+			&:hover {
+
+				background-image: linear-gradient(to right, rgba($shamrock, 1), rgba($aqua, 1));
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+
+				a {
+
+					&:before {
+						background-image: linear-gradient(to right, rgba($shamrock, 1), rgba($aqua, 1));
+					}
+				}
+			}
+		}
+
+		@include media-breakpoint-down (md) {
+			height: 85vh;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			li {
+				padding: 2em .25em;
+				width: 100%;
+
+				a {
+					font-size: 1.5rem;
+					font-weight: 600;
+					padding: 0;
+				}
+			}
+		}
+	}
+
+	.navbar-toggler {
+		border: none;
+		outline: none;
+
+		span {
+			display: block;
+			height: 3px;
+			width: 30px;
+			margin-bottom: 5px;
+			background-image: linear-gradient(to right, rgba($shamrock, 1), rgba($aqua, 1));
+			transition: all .35s ease;
+		}
+
+		&:not(.collapsed) {
+			span {
+				&:nth-child(1) {
+					transform: translateY(8px) rotate(45deg);
+				}
+
+				&:nth-child(2) {
+					opacity: 0;
+				}
+
+				&:nth-child(3) {
+
+					transform: translateY(-8px) rotate(-45deg);
+				}
+			}
+		}
+	}
+}

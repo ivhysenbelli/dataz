@@ -4,6 +4,11 @@
 		align-items: center;
 		min-height: 500px;
 
+		@include media-breakpoint-down(md) {
+			margin-bottom: 60px;
+			flex-direction: column-reverse;
+		}
+
 		.data {
 			.title {
 				margin-bottom: .5em;
@@ -27,13 +32,15 @@
 				padding-left: 1em;
 				display: inline-block;
 				width: 100%;
+
 				li {
 					width: 33.33333333%;
 					margin-bottom: 10px;
 					float: left;
 				}
 			}
-			&:before{
+
+			&:before {
 				display: block;
 				content: '';
 				height: 5px;
@@ -51,6 +58,10 @@
 
 			img {
 				max-width: 350px;
+			}
+
+			@include media-breakpoint-down(md) {
+				margin-bottom: 30px;
 			}
 		}
 
