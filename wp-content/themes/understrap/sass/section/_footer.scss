@@ -51,9 +51,10 @@
     }
 
     .social-links {
-        @include media-breakpoint-down (md){
+        @include media-breakpoint-down (md) {
             margin-top: 2em;
         }
+
         margin-bottom: 2em;
 
         i {
@@ -64,10 +65,11 @@
     .subscribe {
 
         .subscribe-form {
-            .wpcf7{
-                
+            .wpcf7 {
+
                 max-width: 100%;
             }
+
             form {
                 p {
                     display: flex;
@@ -79,9 +81,10 @@
                         border-radius: 50px;
                         outline: none;
                         box-shadow: none;
+
                         &:hover,
                         &:focus,
-                        &:active{
+                        &:active {
                             outline: none;
                             box-shadow: none;
                         }
@@ -97,14 +100,143 @@
                     }
                 }
             }
-            .wpcf7 .wpcf7-validation-errors{
+
+            .wpcf7 .wpcf7-validation-errors {
                 background-color: transparent;
                 border: 0;
                 margin: 0;
                 padding: 0;
             }
-            .ajax-loader{
+
+            .ajax-loader {
                 display: none;
+            }
+        }
+    }
+}
+
+.fixed-contact-form {
+    position: fixed;
+    top: 50%;
+    right: -70px;
+    transform: rotate(-90deg);
+
+    .button {
+        margin: 0;
+        border: 1.5px solid $aqua;
+        color: $aqua;
+        font-weight: 500;
+        padding: 10px 45px;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        text-decoration: none;
+        color: $black-russian;
+        background: linear-gradient(to right, $shamrock, $aqua);
+        text-align: center;
+        font-family: $workSans;
+
+        @include media-breakpoint-down(md) {
+            margin-bottom: 1em;
+        }
+    }
+}
+
+.custom-modal {
+    h3 {
+        font-size: 2,5rem;
+        color: $black-russian;
+        font-weight: 600;
+        margin-bottom: .5em;
+        padding: 1em 2em;
+    }
+
+    .modal-content {
+        .modal-header {
+            border-bottom: 0;
+            button.close{
+                margin: auto 0;
+            }
+        }
+
+        background-image: linear-gradient(to bottom right, $shamrock, $aqua);
+
+        .wpcf7 {
+            max-width: 1140px !important;
+            width: 100%;
+            padding: 1em 3em;
+        }
+        .wpcf7 .wpcf7-validation-errors{
+            padding: 0;
+            margin: 0;
+            background: transparent;
+            margin-top: 3em;
+            border: 0;
+        }
+
+            .ajax-loader {
+                display: none;
+            }
+
+        form {
+            .main-data {
+                display: flex;
+                margin-bottom: 1.5em;
+
+                label {
+                    &:first-of-type {
+                        margin-right: 1em;
+                    }
+                }
+            }
+
+            .meassage-data {
+                label {
+                    margin-bottom: 2em;
+                }
+            }
+
+            label {
+                color: rgba($black-russian, 0.7);
+                font-size: 1rem;
+                font-weight: 400;
+                margin-bottom: .5em;
+            }
+
+            input,
+            textarea {
+                background: transparent;
+                border: 0;
+                border-bottom: 1px solid rgba($black-russian, 0.15);
+                resize: none;
+                border-radius: 0;
+
+                &:hover,
+                &:focus,
+                &:active {
+                    background: transparent;
+                    box-shadow: none;
+                    border-bottom: 1px solid rgba($black-russian, 1);
+
+                }
+            }
+
+            textarea {
+                height: 100px;
+            }
+
+            input[type="submit"] {
+                border: 1px solid $black-russian;
+                float: right;
+                width: 150px;
+                margin-top: 1em;
+                border-radius: 50px;
+                color: $black-russian;
+                font-weight: 500;
+                transition: all .3s ease;
+                &:hover{
+                    color: $white;
+                    background-color: $black-russian;
+                }
             }
         }
     }

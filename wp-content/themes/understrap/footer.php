@@ -55,6 +55,32 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 </div><!-- wrapper end -->
 
+<div class="fixed-contact-form">
+    <a class="button" data-toggle="modal" href="#" data-target="<?php the_field('footer_button_url','options') ?>"><?php the_field('fixed_form_button_title','options') ?></a>
+</div>
+
+    <!-- Modal -->
+<div class="modal fade custom-modal" id="contact-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title"><?php the_field('fixed_form_button_title','options') ?></h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <i class="fa fa-close"></i>
+        </button>
+      </div>
+      <div class="modal-body">
+        <?php $fixedFormID = get_field('fixed_form_id','options'); ?>
+        <?php $fixedFormName = get_field('fixed_form_name','options'); ?>
+        <div class="subscribe-form">
+            <?php echo do_shortcode( '[contact-form-7 id="'.$fixedFormID.'" title="'.$fixedFormName.'"]' ); ?>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
 </div><!-- #page we need this extra closing tag here -->
 
 <?php wp_footer(); ?>
