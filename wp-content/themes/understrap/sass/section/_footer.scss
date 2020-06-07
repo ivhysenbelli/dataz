@@ -1,0 +1,111 @@
+#wrapper-footer {
+    h3 {
+        font-size: 1.5rem;
+        background-image: linear-gradient(to right, rgba($shamrock, 1), rgba($aqua, 1));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 600;
+        margin-bottom: .5em;
+    }
+
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+
+    a {
+        color: $white;
+        text-decoration: none;
+        transition: all .3s ease;
+
+        &:hover {
+            color: $shamrock;
+        }
+    }
+
+    .contact-data {
+        margin-bottom: 2em;
+    }
+
+    .button {
+        margin: 0;
+        border: 1.5px solid $aqua;
+        color: $aqua;
+        font-weight: 500;
+        letter-spacing: 1px;
+        padding: 10px 45px;
+        border-radius: 50px;
+        text-decoration: none;
+        background: transparent;
+        transition: all .5s ease;
+        text-align: center;
+        font-family: $workSans;
+
+        &:hover {
+            color: $black-russian;
+            background: linear-gradient(to right, $shamrock, $aqua);
+        }
+
+        @include media-breakpoint-down(md) {
+            margin-bottom: 1em;
+        }
+    }
+
+    .social-links {
+        @include media-breakpoint-down (md){
+            margin-top: 2em;
+        }
+        margin-bottom: 2em;
+
+        i {
+            font-size: 2rem;
+        }
+    }
+
+    .subscribe {
+
+        .subscribe-form {
+            .wpcf7{
+                
+                max-width: 100%;
+            }
+            form {
+                p {
+                    display: flex;
+                    position: relative;
+
+                    input {
+                        background: transparent;
+                        color: $white;
+                        border-radius: 50px;
+                        outline: none;
+                        box-shadow: none;
+                        &:hover,
+                        &:focus,
+                        &:active{
+                            outline: none;
+                            box-shadow: none;
+                        }
+                    }
+
+                    input[type="submit"] {
+                        position: relative;
+                        width: 150px;
+                        right: 2em;
+                        color: $black-russian;
+                        background: linear-gradient(to right, $shamrock, $aqua);
+                        border: 0;
+                    }
+                }
+            }
+            .wpcf7 .wpcf7-validation-errors{
+                background-color: transparent;
+                border: 0;
+                margin: 0;
+                padding: 0;
+            }
+            .ajax-loader{
+                display: none;
+            }
+        }
+    }
+}
