@@ -53,6 +53,7 @@
   "devDependencies": {
     "@babel/core": "^7.4.4",
     "autoprefixer": "^9.5.1",
+    "bootstrap-slider": "^11.0.2",
     "gulp-babel": "^8.0.0",
     "gulp-postcss": "^8.0.0"
   }
