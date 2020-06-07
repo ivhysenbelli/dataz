@@ -17,4 +17,13 @@
 			width: 100%;
 		}
 	}
+	h1{
+		text-align: center;
+		 font-size: 4rem;
+        background-image: linear-gradient(to right, rgba($shamrock, 1), rgba($aqua, 1));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 600;
+        margin-bottom: .5em;
+	}
 }

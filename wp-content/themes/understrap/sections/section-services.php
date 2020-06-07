@@ -9,9 +9,11 @@
 								<h2 class="title"><?php the_sub_field('section_title'); ?></h2>
 								<p class="description"><?php the_sub_field('section_description'); ?></p>
 							</div>
+							<?php if(!empty(get_sub_field('button_link'))): ?>
 							<div class="buttons-row">
 								<a href="<?php the_sub_field('button_url') ?>" class="button"><?php the_sub_field('button_link') ?></a>
 							</div>
+							<?php endif; ?>
 							<?php $extraInfo = get_sub_field_object('show_extra_info'); ?>
 							<?php if($extraInfo['value'] == true): ?>
 								<div class="extra-info">
