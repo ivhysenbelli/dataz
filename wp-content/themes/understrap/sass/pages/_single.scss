@@ -1,0 +1,25 @@
+.single-post{
+    .entry-header{
+        span{
+            a{
+                color: $white;
+                font-weight: 300;
+            }
+        }
+    }
+    font-weight: 300;
+    img{
+        padding: 1em 1em 1em 0;
+        max-height: 350px;
+        width: auto;
+        float: left;
+    }
+    .entry-content{
+        p{
+            &:first-of-type{
+                padding-top: 0.75em;
+            }
+        }
+    }
+
+}

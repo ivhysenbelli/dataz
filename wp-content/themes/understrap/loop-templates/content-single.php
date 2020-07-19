@@ -9,7 +9,10 @@
 defined( 'ABSPATH' ) || exit;
 ?>
 
-<article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
+<div class="container">
+	<div class="row">
+		<div class="col-12">
+			<article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
 	<header class="entry-header">
 
@@ -23,9 +26,9 @@ defined( 'ABSPATH' ) || exit;
 
 	</header><!-- .entry-header -->
 
-	<?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
-
 	<div class="entry-content">
+
+			<?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
 
 		<?php the_content(); ?>
 
@@ -47,3 +50,7 @@ defined( 'ABSPATH' ) || exit;
 	</footer><!-- .entry-footer -->
 
 </article><!-- #post-## -->
+		</div>
+	</div>
+</div>
+
