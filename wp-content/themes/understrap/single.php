@@ -23,8 +23,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 					<?php get_template_part( 'loop-templates/content', 'single' ); ?>
 
-					<?php understrap_post_nav(); ?>
-
 				<?php endwhile; // end of the loop. ?>
 
 			</main><!-- #main -->

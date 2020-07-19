@@ -1,0 +1,63 @@
+#blog-page-wrapper {
+    .single-blog-item {
+        position: relative;
+        margin-bottom: 2em;
+        overflow: hidden;
+
+        .title {
+
+            color: $black-russian;
+            background: linear-gradient(to right, $shamrock, $aqua);
+            width: 100%;
+            padding: 1em;
+            opacity: 0.75;
+            transition: all .3s ease;
+
+            h2 {
+                font-size: 1rem;
+                margin: 0;
+            }
+        }
+
+        .image {
+            overflow: hidden;
+
+            img {
+                object-fit: cover;
+                transition: all .3s ease;
+            }
+        }
+
+        .button-row {
+            position: absolute;
+            bottom: 3em;
+            left: 2em;
+
+            .button {
+                margin: 0 .5em;
+                font-weight: 500;
+                letter-spacing: 0px;
+                padding: 10px 25px;
+                border-radius: 50px;
+                text-decoration: none;
+                transition: all .5s ease;
+                text-align: center;
+                font-family: $workSans;
+
+
+                color: $black-russian;
+                background: linear-gradient(to right, $shamrock, $aqua);
+            }
+        }
+
+        &:hover {
+            .title {
+                opacity: 1;
+            }
+
+            img {
+                transform: scale(1.1);
+            }
+        }
+    }
+}
