@@ -1,6 +1,7 @@
 <?php $bannerImage = get_sub_field('background_image'); ?>
 <?php $mainImage = get_sub_field('main_image');?>
 <div class="section section-main-banner">
+	<canvas class='particles-bg'></canvas>
 	<div class="data">
 		<?php if(!empty(get_sub_field('banner_title'))): ?>
 			<h1><?php the_sub_field('banner_title'); ?></h1>

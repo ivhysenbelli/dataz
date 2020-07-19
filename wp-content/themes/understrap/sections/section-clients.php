@@ -1,4 +1,4 @@
-<section class="section section-clients">
+<section class="section section-clients slide-up">
 	<div class="container">
 		<div class="row">
 			<div class="col-12">

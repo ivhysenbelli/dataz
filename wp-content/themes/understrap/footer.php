@@ -27,7 +27,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                     <?php the_field('contact_data', 'options'); ?>
                 </div>
                 <div class="contact-button">
-                    <a class="button" href="<?php the_field('footer_button_url','options') ?>"><?php the_field('footer_button_title','options') ?></a>
+                    <a class="button" href="#" data-toggle="modal" data-target="<?php the_field('footer_button_url', 'options'); ?>"><?php the_field('footer_button_title','options') ?></a>
                 </div>
             </div><!--col end -->
 

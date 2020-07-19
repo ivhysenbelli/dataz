@@ -1,4 +1,10 @@
 .section-testimonials {
+	@include media-breakpoint-down(sm) {
+		display: none;
+	}
+
+	margin-bottom: 80px;
+
 	.title {
 		margin-bottom: 2em;
 
@@ -44,6 +50,7 @@
 					margin: 0 2em;
 					position: relative;
 					top: 1em;
+
 					@include media-breakpoint-down(sm) {
 						max-height: 100px;
 					}

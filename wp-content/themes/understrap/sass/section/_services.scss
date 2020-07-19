@@ -65,9 +65,8 @@
 			}
 		}
 
-		@include media-breakpoint-up (md) {
-
-			&:nth-child(even) {
+		&:nth-child(even) {
+			@include media-breakpoint-up(lg) {
 				flex-direction: row-reverse;
 			}
 		}

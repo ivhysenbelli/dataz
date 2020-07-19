@@ -3,7 +3,7 @@
 		<div class="row">
 			<?php if(have_rows('services')): ?>
 				<?php while(have_rows('services')) : the_row(); ?>
-					<div class="row single-service">
+					<div class="row single-service slide-up">
 						<div class="col-lg-6">
 							<div class="data">
 								<h2 class="title"><?php the_sub_field('section_title'); ?></h2>

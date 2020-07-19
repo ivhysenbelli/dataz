@@ -1,4 +1,4 @@
-<section class="section section-testimonials">
+<section class="section section-testimonials slide-up">
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
