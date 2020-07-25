@@ -120,6 +120,9 @@
     top: 50%;
     right: -70px;
     transform: rotate(-90deg);
+    @include media-breakpoint-down(md){
+        display: none;
+    }
 
     .button {
         margin: 0;
