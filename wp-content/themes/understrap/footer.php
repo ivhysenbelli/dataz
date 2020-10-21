@@ -21,7 +21,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		<div class="row">
 
-            <div class="col-lg-6">
+            <div class="col-lg-4">
                 <h3><?php the_field('column_title', 'options'); ?></h3>
                 <div class="contact-data">
                     <?php the_field('contact_data', 'options'); ?>
@@ -31,14 +31,14 @@ $container = get_theme_mod( 'understrap_container_type' );
                 </div>
             </div><!--col end -->
 
-			<div class="col-lg-6">
+			<div class="col-lg-4">
                 <div class="social-links">
                     <h3><?php the_field('social_links_title','options') ?></h3>
                     <?php while(have_rows('social_links','options')): the_row(); ?>
                         <a href="<?php the_sub_field('icon_url','options') ?>"><i class="fa fa-<?php the_sub_field('icon_name','options'); ?>"></i></a>
                     <?php endwhile; ?>
                 </div>
-                <div class="subscribe">
+                <div class="subscribe" style="display:none;">
                     <h3><?php the_field('subscribe_title','options'); ?></h3>
                     <?php $subscribeFormID = get_field('subscribe_form_id','options'); ?>
                     <?php $subscribeFormName = get_field('subscribe_form_name','options'); ?>
@@ -48,6 +48,14 @@ $container = get_theme_mod( 'understrap_container_type' );
                 </div>
 
 			</div><!--col end -->
+			<div class="col-lg-4">
+				<h3>
+					Policy
+				</h3>
+                <a href="/cookie-policy" target="blank">Cookie policy</a>  <br>
+				<a href="/privacy-policy" target="blank">Privacy policy</a>  <br>
+				<a href="/termini-duso" target="blank">Termini d'uso</a>
+            </div><!--col end -->
 
 		</div><!-- row end -->
 
@@ -77,10 +85,11 @@ $container = get_theme_mod( 'understrap_container_type' );
         </div>
 
       </div>
+		<div style="text-align:right;padding-right:30px;padding-bottom:15px;">*Cliccando invia, accetti il nostri <a href="/termini-duso">termini d'uso</a>.</div>
     </div>
   </div>
 </div>
-
+<div style="color:white;text-align:center;">Datz S.r.l., Viale Monte Nero 82, 20145 - Milano<br/> P.IVA/C.F. 11357730966 - REA MI-2597087 - c.s. 10.000,00 Euro</div>
 </div><!-- #page we need this extra closing tag here -->
 
 <?php wp_footer(); ?>
