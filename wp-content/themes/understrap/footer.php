@@ -92,9 +92,7 @@ $container = get_theme_mod( 'understrap_container_type' );
         <div class="subscribe-form">
             <?php echo do_shortcode( '[contact-form-7 id="'.$fixedFormID.'" title="'.$fixedFormName.'"]' ); ?>
         </div>
-
       </div>
-		<div style="text-align:right;padding-right:30px;padding-bottom:15px;">*Cliccando invia, accetti il nostri <a href="/termini-duso">termini d'uso</a>.</div>
     </div>
   </div>
 </div>

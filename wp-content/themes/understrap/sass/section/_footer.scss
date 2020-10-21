@@ -63,6 +63,7 @@
     }
 
     .subscribe {
+        margin-top: 2em;
 
         .subscribe-form {
             .wpcf7 {
@@ -71,9 +72,16 @@
             }
 
             form {
-                p {
+                display: flex;
+                flex-direction: column;
+                div {
                     display: flex;
                     position: relative;
+                    max-width: 500px;
+                    margin-bottom: 1em;
+                    .wpcf7-list-item{
+                        margin: 0;
+                    }
 
                     input {
                         background: transparent;
@@ -106,6 +114,9 @@
                 border: 0;
                 margin: 0;
                 padding: 0;
+            }
+            .wpcf7-response-output{
+                display: none;
             }
 
             .ajax-loader {
@@ -229,17 +240,21 @@
 
             input[type="submit"] {
                 border: 1px solid $black-russian;
-                float: right;
+                float: left;
                 width: 150px;
                 margin-top: 1em;
                 border-radius: 50px;
                 color: $black-russian;
                 font-weight: 500;
                 transition: all .3s ease;
+                margin-bottom: 1em;
                 &:hover{
                     color: $white;
                     background-color: $black-russian;
                 }
+            }
+            .wpcf7-list-item{
+                margin: 0;
             }
         }
     }
